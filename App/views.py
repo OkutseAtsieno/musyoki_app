@@ -113,6 +113,12 @@ def advocate_signin(request):
     return render(request, 'advocatelogin.html')
 
 
+def signout(request):
+    logout(request)
+    messages.success(request, 'Logout successful')
+    return redirect('Advocate_login')
+
+
 def advocate_login(request):
     return render(request, 'advocatelogin.html')
 

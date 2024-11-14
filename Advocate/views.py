@@ -1,10 +1,12 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from .forms import clientform
+from django.contrib.auth.models import User
 
 
 # Create your views here.
 
+@login_required()
 def index(request):
     return render(request, 'index.html')
 
@@ -44,7 +46,9 @@ pass
 
 
 def userprofile(request):
-    return render(request, 'userprofile.html')
+    email = request.user.email
+    email = User.objects.get(email=email)
+    return render(request, 'userprofile.html', {'email': email})
 
 
 def clientforms(request):
