@@ -1,0 +1,18 @@
+
+.custom-width {
+    max-width: 300px;  /* Set the maximum width */
+    width: 100%;        /* Allow the input to take the full width of the parent */
+    margin: 5px auto;  /* Center the input and reduce vertical spacing */
+    display: block;     /* Ensures each input is a block element for centering */
+}
+
+.form-group {
+    text-align: center; /* Center the text */
+    margin-bottom: 10px; /* Minimal space between each form group */
+}
+
+.form-group label {
+    display: block;     /* Ensures each label is above its corresponding input */
+    margin-bottom: 2px; /* Reduced space between the label and the input */
+    font-weight: bold;  /* Make labels bold for better visibility */
+}

@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3> The client information</h3>
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6"> <!-- Adjust width here -->
+      <form>
+        
+
+        
+        <div class="mb-3">
+
+          <label for="fullname" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="fullname" placeholder="name">
+        </div>
+
+        <div class="mb-3">
+          <label for="case_no" class="form-label">Case No</label>
+          <input type="text" class="form-control" id="case_no" placeholder="BMB000">
+        </div>
+
+        <div class="mb-3">
+          <label for="File_no" class="form-label">File No</label>
+          <input type="text" class="form-control" id="case_no" placeholder="BMD000">
+        </div>
+        
+        <div class="mb-3">
+          <label for="position" class="form-label">Position</label>
+          <select class="form-select" id="position">
+            <option selected>Select your position</option>
+            <option value="1">plaintiff</option>
+            <option value="2">defendant</option>
+            <option value="3">interested party</option>
+            <option value="3">applicant</option>
+            <option value="3">petitioner</option>
+            
+          </select>
+        </div>
+
+         <div class="mb-3">
+          <label for="parties_reps" class="form-label">Other Parties</label>
+          <textarea class="form-control" id="parties_reps" placeholder="Enter parties " rows="3" required></textarea>
+        </div>
+
+
+         <div class="mb-3">
+          <label for="parties_reps" class="form-label">Other Parties Representatives</label>
+          <textarea class="form-control" id="parties_reps" placeholder="Enter parties representatives" rows="3" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+    <i class="fa fa-database" aria-hidden="false"></i> Submit
+</button>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

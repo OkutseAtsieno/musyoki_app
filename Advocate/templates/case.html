@@ -1,0 +1,89 @@
+
+{% extends "base.html" %}
+
+
+{% block title %}
+
+case
+{% endblock title %}
+{% block content %}
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6"> <!-- Adjust width here -->
+      <form>
+        
+
+        
+        <div class="mb-3">
+
+          <label for="fullname" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="fullname" placeholder="name">
+        </div>
+
+        <div class="mb-3">
+          <label for="case_no" class="form-label">Case No</label>
+          <input type="text" class="form-control" id="case_no" placeholder="BMB000">
+        </div>
+
+
+         
+        <div class="mb-3">
+          <label for="position" class="form-label">Case type</label>
+          <select class="form-select" id="position">
+            <option selected>select a case type</option>
+            <option value="1">murder</option>
+            <option value="2">Environment and Land</option>
+            <option value="3">criminal</option>
+            <option value="3">child</option>
+            <option value="3">conveyancing</option>
+            
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="Advocate assigned" class="form-label">Advocate assigned</label>
+          <select class="form-select" id="position">
+            <option selected>Advocate Assigned</option>
+            <option value="1">EK</option>
+            <option value="2">MC</option>
+            <option value="3">GM</option>
+            
+            
+          </select>
+        </div>
+
+        
+        <div class="mb-3">
+          <label for="File_no" class="form-label">Filed date</label>
+          <input type="date" class="form-control" id="" placeholder="1/1/2000">
+        </div>
+
+        <div class="mb-3">
+          <label for="File_no" class="form-label">status</label>
+          <input type="text" class="form-control" id="" placeholder="">
+        </div>
+
+        <div class="mb-3">
+          <label for="File_no" class="form-label">matter coming up for </label>
+          <input type="text" class="form-control" id="case_no" placeholder="">
+        </div>
+
+        
+        <div class="mb-3">
+  <label for="next_date" class="form-label">Next Date</label>
+  <input type="date" class="form-control" id="next_date" placeholder="Select the next date">
+</div>
+<button type="submit" class="btn btn-primary">
+    <i class="fa fa-database" aria-hidden="false"></i> Submit
+</button>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock content %}
+
+
