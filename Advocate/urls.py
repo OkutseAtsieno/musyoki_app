@@ -10,6 +10,8 @@ urlpatterns = [
     path('client_form/', views.client_form, name='client_form'),
     path('case', views.case, name='case'),
     path('userprofile', views.userprofile, name='userprofile'),
-    path('clientforms', views.clientforms, name='clientforms')
+    path('clientforms', views.clientforms, name='clientforms'),
+    path('personalinfo',views.personalinfo,name='personalinfo'),
+    path('Caseinfo',views.Caseinfo,name='Caseinfo')
 
 ]

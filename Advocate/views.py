@@ -1,10 +1,12 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from .forms import clientform
+from django.contrib.auth.models import User
 
 
 # Create your views here.
 
+@login_required()
 def index(request):
     return render(request, 'index.html')
 
@@ -19,6 +21,9 @@ def client_list(request):  # display all the client lists
 
 def case(request):
     return render(request, 'case.html')
+
+def personalinfo(request):
+    return render(request, 'personalinfo.html')
 
 
 def client_form(request):  # deal with insert and update operations
@@ -44,8 +49,13 @@ pass
 
 
 def userprofile(request):
-    return render(request, 'userprofile.html')
+    email = request.user.email
+    email = User.objects.get(email=email)
+    return render(request, 'userprofile.html', {'email': email})
 
 
 def clientforms(request):
     return render(request, 'clientforms.html')
+
+def Caseinfo(request):
+    return render(request, 'Caseinfo.html')
