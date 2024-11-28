@@ -133,3 +133,6 @@ def userprofileinsert(request):
         messages.success(request, 'Profile updated successfully')
         return redirect('userprofile')
     return redirect('userprofile')
+
+def personal_info(request):
+    return render(request, 'personalinfo.html')
