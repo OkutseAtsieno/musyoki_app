@@ -11,7 +11,6 @@ urlpatterns = [
     path('case', views.case, name='case'),
     path('userprofile', views.userprofile, name='userprofile'),
     path('clientforms', views.clientforms, name='clientforms'),
-<<<<<<< HEAD
     path('personalinfo',views.personalinfo,name='personalinfo'),
     path('Caseinfo',views.Caseinfo,name='Caseinfo')
 =======
