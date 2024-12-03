@@ -11,9 +11,8 @@ urlpatterns = [
     path('case', views.case, name='case'),
     path('userprofile', views.userprofile, name='userprofile'),
     path('clientforms', views.clientforms, name='clientforms'),
-    path('personalinfo',views.personalinfo,name='personalinfo'),
     path('Caseinfo',views.Caseinfo,name='Caseinfo'),
-    path('userprofileinsert', views.userprofileinsert, name='userprofileinsert'),
+    path('userprofile', views.userprofile, name='userprofile'),
     path('personal_info', views.personal_info, name='personal_info')
 
 

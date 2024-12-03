@@ -2,7 +2,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from .forms import clientform
 from django.contrib.auth.models import User
-
+from . models import user_profile
 
 # Create your views here.
 
@@ -30,7 +30,7 @@ def client_list(request):  # display all the client lists
 def case(request):
     return render(request, 'case.html')
 
-def personalinfo(request):
+def personal_info(request):
     return render(request, 'personalinfo.html')
 
 
