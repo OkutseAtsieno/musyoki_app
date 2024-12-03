@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 097120a82c796f00a4bd4bbaf2207ba5e801b253
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +14,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+<<<<<<< HEAD
     <title>Personal Info</title>
+=======
+    <title>Client profile</title>
+>>>>>>> 097120a82c796f00a4bd4bbaf2207ba5e801b253
 
     <!-- Custom fonts for this template-->
     <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
@@ -22,6 +29,10 @@
     <!-- Custom styles for this template-->
     <link href="{% static 'css/sb-admin-2.min.css' %}" rel="stylesheet">
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 097120a82c796f00a4bd4bbaf2207ba5e801b253
 </head>
 
 <body id="page-top">
@@ -55,6 +66,7 @@
                 <span>User profile</span></a>
         </li>
 
+<<<<<<< HEAD
         <div class="sidebar-heading">
             Calender
         </div>
@@ -85,6 +97,31 @@
         </div>
     </div>
 </li>
+=======
+
+        <!-- Nav Item - Utilities Collapse Menu -->
+
+        <div class="sidebar-heading">
+            Advocate Section
+        </div>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+               aria-expanded="true" aria-controls="collapsePages">
+                <i class="bi bi-pencil-square"></i>
+                <span>Case Registration</span>
+
+                <!--<a class="nav-link active" href="{% url 'case' %}">case</a> -->
+            </a>
+            <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="/personal_info">Personal Information</a>
+                    <a class="collapse-item" href="register.html">Case Information</a>
+                    <a class="collapse-item" href="forgot-password.html">Payment Information</a>
+                </div>
+            </div>
+        </li>
+>>>>>>> 097120a82c796f00a4bd4bbaf2207ba5e801b253
 
         <!-- Divider -->
         <hr class="sidebar-divider">
@@ -98,8 +135,13 @@
         <li class="nav-item">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
                aria-expanded="true" aria-controls="collapsePages">
+<<<<<<< HEAD
                 <i class="fas fa-fw fa-folder"></i>
                 <a class="nav-link active" href="{% url 'case' %}">case</a>
+=======
+                <i class="">Hello</i>
+                <!--<a class="nav-link active" href="{% url 'case' %}">case</a> -->
+>>>>>>> 097120a82c796f00a4bd4bbaf2207ba5e801b253
             </a>
             <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
@@ -330,13 +372,20 @@
                     <li class="nav-item dropdown no-arrow">
                         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<<<<<<< HEAD
                             <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
                             <img class="img-profile rounded-circle"
                                  src="img/undraw_profile.svg">
+=======
+                            <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{ dat.first_name }} {{ dat.last_name }}</span>
+                            <img class="img-profile rounded-circle"
+                                 src="/media/{{ prof }}">
+>>>>>>> 097120a82c796f00a4bd4bbaf2207ba5e801b253
                         </a>
                         <!-- Dropdown - User Information -->
                         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                              aria-labelledby="userDropdown">
+<<<<<<< HEAD
                             <a class="dropdown-item" href="#">
                                 <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                 Profile
@@ -346,11 +395,26 @@
                                 Settings
                             </a>
                             <a class="dropdown-item" href="#">
+=======
+                            <a class="dropdown-item" href="/userprofile">
+                                <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Profile
+                            </a>
+                            <a class="dropdown-item" href="/Userprofile">
+                                <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Settings
+                            </a>
+                            <a class="dropdown-item" href="/Userprofile">
+>>>>>>> 097120a82c796f00a4bd4bbaf2207ba5e801b253
                                 <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
                                 Activity Log
                             </a>
                             <div class="dropdown-divider"></div>
+<<<<<<< HEAD
                             <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+=======
+                            <a class="dropdown-item" href="/signout" data-target="#logoutModal">
+>>>>>>> 097120a82c796f00a4bd4bbaf2207ba5e801b253
                                 <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                 Logout
                             </a>
@@ -365,6 +429,7 @@
             <!-- Begin Page Content -->
             <div class="container-fluid">
 
+<<<<<<< HEAD
                    
         <!-- Content Row -->
                 <div class="card" style='background-color: #318CE7'>
@@ -434,6 +499,51 @@
 
 
                 </div>
+=======
+                <!-- Page Heading -->
+                <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                    <h1 class="h3 mb-0 text-gray-800">Client Details</h1>
+                    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                            class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+                </div>
+
+                <!-- Content Row -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label for="" class="form-label">First Name</label>
+                            <input type="text" class="form-control" name="">
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label for="" class="form-label">Middle Name</label>
+                            <input type="text" class="form-control" name="" disabled>
+                        </div>
+                    </div>
+                     <div class="col-md-4">
+                        <div class="mb-3">
+                            <label for="" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" name="">
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+                <!-- Content Row -->
+
+
+                <!-- Content Row -->
+
+
+>>>>>>> 097120a82c796f00a4bd4bbaf2207ba5e801b253
             </div>
             <!-- /.container-fluid -->
 
@@ -500,4 +610,8 @@
 
 </body>
 
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> 097120a82c796f00a4bd4bbaf2207ba5e801b253

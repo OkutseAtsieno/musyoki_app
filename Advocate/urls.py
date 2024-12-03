@@ -11,7 +11,12 @@ urlpatterns = [
     path('case', views.case, name='case'),
     path('userprofile', views.userprofile, name='userprofile'),
     path('clientforms', views.clientforms, name='clientforms'),
+<<<<<<< HEAD
     path('personalinfo',views.personalinfo,name='personalinfo'),
     path('Caseinfo',views.Caseinfo,name='Caseinfo')
+=======
+    path('userprofileinsert', views.userprofileinsert, name='userprofileinsert'),
+    path('personal_info', views.personal_info, name='personal_info')
+>>>>>>> 097120a82c796f00a4bd4bbaf2207ba5e801b253
 
 ]
